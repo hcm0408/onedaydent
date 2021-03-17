@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Notification.NotificationActivity">
+
+    <include
+        android:id="@+id/toolbar2"
+        layout="@layout/app_bar_fcm"
+        android:background="@color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+    </include>
+    
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@+id/toolbar2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@color/gray2"
+            android:gravity="center|left"
+            android:text="서비스안내">
+
+        </TextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray2">
+        </View>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="15dp"
+            android:textSize="14sp"
+            android:background="@color/transfer"
+            android:textColor="@color/black"
+            android:gravity="center|left"
+            android:text="개인정보 처리방침">
+
+        </androidx.appcompat.widget.AppCompatButton>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray2">
+        </View>
+        
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@color/transfer"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="center|left"
+                android:text="버전정보">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/setting_version"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="14sp"
+                android:textColor="@color/gray"
+                android:gravity="center|left"
+                android:text="">
+            </TextView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray2">
+        </View>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="15dp"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:background="@color/gray2"
+            android:gravity="center|left"
+            android:text="알림설정">
+        </TextView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@color/transfer"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="center|left"
+                android:text="푸시 알림">
+
+            </TextView>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/setting_push"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:track="@drawable/switch_selector"
+                android:thumb="@drawable/switch_thumb"
+                android:layout_width="100dp"
+                android:layout_height="60dp">
+            </com.google.android.material.switchmaterial.SwitchMaterial>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray2">
+        </View>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingRight="15dp"
+            android:paddingLeft="15dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:background="@color/transfer"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:gravity="center|left"
+                android:text="이벤트 알림">
+
+            </TextView>
+
+            <com.google.android.material.switchmaterial.SwitchMaterial
+                android:id="@+id/setting_event"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:track="@drawable/switch_selector"
+                android:thumb="@drawable/switch_thumb"
+                android:layout_width="100dp"
+                android:layout_height="60dp">
+            </com.google.android.material.switchmaterial.SwitchMaterial>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray2">
+        </View>
+
+    </LinearLayout>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

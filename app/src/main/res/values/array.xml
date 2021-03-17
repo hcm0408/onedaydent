@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_dot_active">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+    <array name="array_dot_inactive">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+</resources>

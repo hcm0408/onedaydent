@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "702686446042",
+    "firebase_url": "https://onedaydent-2089d.firebaseio.com",
+    "project_id": "onedaydent-2089d",
+    "storage_bucket": "onedaydent-2089d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702686446042:android:df95de485391b48c",
+        "android_client_info": {
+          "package_name": "com.onedaydent.onedaydent"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702686446042-gsug2bboani9lpcueuga53k2f3gfjgcn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9U1eJpC6WnatBQJZ2SYoWaIXc0EcP-uo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702686446042-gsug2bboani9lpcueuga53k2f3gfjgcn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "702686446042-eukfcmmtansak76n2thef4pru14v6mu6.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.onedaydent.onedaychat"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Tab.MainTab2"
+    android:background="@android:color/white">
+
+    <androidx.core.widget.NestedScrollView
+        android:overScrollMode="never"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_tab2_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/welcomeBackground"
+                android:textSize="20sp"
+                android:gravity="left"
+                android:layout_marginTop="80dp"
+                android:layout_marginRight="60dp"
+                android:layout_marginLeft="60dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/tab2_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:scrollbars="none"
+                android:overScrollMode="never"
+                android:paddingTop="@dimen/list_item_spacing_half"
+                tools:context=".Main.Fragment.ItemListDialogFragment"
+                tools:listitem="@layout/fragment_tab2_item" />
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

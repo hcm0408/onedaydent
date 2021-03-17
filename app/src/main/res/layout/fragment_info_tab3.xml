@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Main.Tab.MainTab3"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/txt_tab3_price"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="left"
+        android:text="총 금액"
+        android:textColor="@color/colorAccent"
+        android:textSize="19sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_tab3_price_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:gravity="right"
+        android:text="0원"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/tab3_view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_tab3_price"
+        android:layout_marginTop="15dp">
+    </View>
+    
+    <TextView
+        android:id="@+id/txt_tab3_payment"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab3_view1"
+        android:text="납부 금액"
+        android:textColor="@color/welcomeBackground"
+        android:gravity="left"
+        android:textSize="19sp"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txt_tab3_payment_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="0원"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab3_view1" />
+
+    <View
+        android:id="@+id/tab3_view2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_tab3_payment"
+        android:layout_marginTop="15dp">
+    </View>
+
+    <TextView
+        android:id="@+id/txt_tab3_balance"
+        android:layout_width="110sp"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab3_view2"
+        android:text="잔액"
+        android:textColor="@color/welcomeBackground"
+        android:gravity="left"
+        android:textSize="19sp"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/txt_tab3_balance_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:text="0원"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:layout_marginTop="15dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tab3_view2" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txt_tab3_balance"
+        android:layout_marginTop="15dp">
+    </View>
+
+    <ImageButton
+        android:id="@+id/btn_tab3_arrow"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/main_arrow"
+        android:scaleType="centerInside"
+        android:background="@color/transfer"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"></ImageButton>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="결제상세"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="7dp"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_tab3_arrow" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="9sp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/copyright"
+        app:layout_constraintLeft_toRightOf="parent"
+        app:layout_constraintRight_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
